@@ -1,0 +1,63 @@
+*{ 
+  box-sizing: border-box;
+}
+/* Line 6 rule set would change the background color and color text within the body*/ 
+body { 
+background-color: azure		; 
+color: navy; 
+}
+/*Style of the header */
+.header{
+background-color: PapayaWhip;
+padding: 20px;
+text-align:left;
+color: DarkSeaGreen; 
+}
+
+
+
+/* style of nav bar*/
+.topnav{
+ background-color: PowderBlue	;
+ overflow:hidden;
+}
+/* style the links inside the nav bar*/
+.topnav a{
+color: olive;
+float: left;
+display: block;
+text-align: center;
+padding: 14px 16px;
+}
+
+
+/* changes color on hover or mouse over */
+.topnav a:hover{
+background-color: Wheat;
+color: LightCoral; 
+}
+
+#movingbox{
+        width: 200px;
+  height: 200px;
+          background-color:cadetblue ;
+          border: double blue 5px; 
+          position:relative;
+          left:200px;
+        }
+button{
+
+border-radius: 15px  ;
+  background: #a6cd70;
+  padding: 14px;
+  width: 100px;
+  height: 50px;
+  position:relative;
+  
+}
+button:hover{
+ border-radius: 15px ;
+  background: #def9b9;
+  padding: 14px;
+  width: 100px;
+  height: 50px;}

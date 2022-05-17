@@ -1,0 +1,196 @@
+*{
+  /*the box-sizing means it allows for padding and the height and width of the border for all the css attributes
+  font-family changes all the text to one font*/
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Kanit', sans-serif;
+}
+body{
+  /* the body effects everything in the body tag for html,
+  wtih bg color, then the vertical arrangments of the border are included, display block is the how the text is aligned, position relative changes it back to its normal position */
+  background-color: salmon;
+  height:120vh;
+  width:120vh;
+  display:block;
+  position:relative;
+}
+
+
+
+.wrapper{
+  /* this attribute affects those with the wrapper class*/
+  display:block;
+  background-color:Linen;
+  width:600px;
+  height:600px;
+  position:absolute;
+  top:50%;
+  left:50%;
+  padding:4px;
+  outline:Gold;
+ outline-offset:-15px;
+  
+ 
+}
+.section_userform{
+  /* affects those within the section.userform class*/
+  width:75%;
+  sisplay:block;
+  margin:0 auto;
+  color: indigo;
+}
+.break{
+  /* effects the display of before & after*/
+display:block;
+  width:100%;
+  margin:2em 0;
+  }
+/* effects the textboxes in size and color*/
+.textbox{
+  width:50%;
+  height:1.8em;
+  box-sizing:content-box;
+  background-color: white;
+  border-color:gray;
+  padding-left:1em;
+  color:black;
+}
+.input_label{
+  /* effects the input title attributes*/
+  width:35%;
+  text-align:right;
+  font-size:1.5em;
+  color:#0d7d61;
+}
+.button{
+  /* the appearance of the button is affected*/
+  display:block;
+  margin:none;
+  padding: 0.5em 2.5em;
+  text-transform:upppercase;
+  background-color: white;
+  border-color:#85abff ;
+  color:blue;
+  font-size:1 em;
+  border-width: 3px;
+  border-radius:5px;
+border-style: solid;
+  }
+.button:hover{
+  /* when hovering over the button, it changes color and scaled bigger*/
+  background-color:#ecdcda ;
+  border-color:#eeb9c1 ;
+  color:#f95448;
+  transform:scale(1.05);
+}
+.break_buttonWrapper{
+  /* affects the appearance of the results? */
+  display:grid;
+  justify-content:center;
+}
+
+.section_info{
+  /* class effects the the top text*/
+  text-align:center;
+  margin-bottom:1em;
+  color:cadetblue;
+}
+.section_info h1{
+  /* effects h1 of in this class*/
+  font-size:5em;
+}
+#line{
+  /* effects the line of that separates the toptext from the textboxes*/
+  border-color: #c373d9;
+    width:80%;
+  margin: 0 auto;
+  margin-bottom: 4em;
+}
+.result{
+  /* effects the class of the results, puts the registered info*/
+  width:45%;
+  text-align:left;
+  display:inline-block;
+  font-size:1.5em;
+  color:white;
+}
+.result_label{
+  /* effects the labels of the result*/
+  width:40%;
+  text-align:right;
+  display:inline-block;
+  font-size:1.5em;
+  color:#CC1E1E ;
+}
+#before{
+  /*effects the register box*/
+  opacity:1;
+  display:block;
+  text-align:left;
+  background-color:SandyBrown;
+  color: tomato;
+  border-style:dotted; 
+  padding:8px;
+ margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+#after{
+  /* affects the registered box */
+  display:none;
+  opacity:0;
+ background-color:#9ACD32;
+  padding: 15px;
+   margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 80px;
+  margin-left: 80px;
+}
+
+
+#input_username_button:focus #after{
+  /* registered info on the return button*/
+  display:block;
+  opacity:1; 
+
+}
+#input_username_button:focus #before{
+  /* whether the before button shows up or not? */
+  display:hidden;
+  opacity:0; 
+  position:absolute;
+  top:800px;
+}
+
+/*Style of the header */
+.header{
+background-color: PapayaWhip;
+padding: 20px;
+text-align:left;
+color: DarkSeaGreen; 
+}
+
+
+
+.topnav{
+ background-color: PowderBlue	;
+ overflow:hidden;
+}
+/* style the links inside the nav bar*/
+.topnav a{
+color: olive;
+float: left;
+display: block;
+text-align: center;
+padding: 14px 16px;
+}
+
+
+/* changes color on hover or mouse over */
+.topnav a:hover{
+background-color: Wheat;
+color: LightCoral; 
+}

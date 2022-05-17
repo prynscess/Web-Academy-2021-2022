@@ -1,0 +1,162 @@
+<!--doctypehtml-->
+
+
+<html>
+		<head>
+       <link rel="shortcut icon" href="../lab6/download.png" type="image/x-icon">
+      <link rel="stylesheet" href="../../mainportfolio.css">	
+		<title> Internal CSS </title>
+  <style>
+    *{
+      /* the * works as universal selector for CSS */
+ box-sizing:border-box;
+    }
+    /*A CSS selector selects the HTML elements(s) you want to style. Simple selectors (select elements based on name, id, class */ 
+    /* any html tag can be a selector, For exammple*/
+    body{
+ background-image: url('https://laurenconrad.com/wp-content/uploads/2015/08/JenBPeters_Flowers_Pink.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 50%;
+    }
+    /* The class selector selects HTML elements with a specific class attribute.
+    To select elements with a specific class, write a period (.) character, followed by the class name.*/
+    .header{
+      background-image:repeating-radial-gradient(red 15%, yellow 60%, green 25%);
+      text-align: center;
+      padding: 20px;
+      margin: 50px;
+      color: ##FFFFE0
+    }
+    /* The id selector uses the id attribute of an HTML element to select a specific element.
+
+    The id of an element is unique within a page, so the id selector is used to select one element!
+
+    To select an element with a specific id, write a hash (#) character, followed by the id of the element.*/
+    
+    .topnav{
+ background-color: PowderBlue	;
+ overflow:hidden;
+}
+/* style the links inside the nav bar*/
+.topnav a{
+color: olive;
+float: left;
+display: block;
+text-align: center;
+padding: 14px 16px;
+}
+
+/* changes color on hover or mouse over */
+.topnav a:hover{
+background-color: Wheat;
+color: LightCoral; 
+}
+/* This one will affect all h1 htmls elements on the page */
+/* Tag selector */
+h1{
+  color:blue;
+}
+/* This one will affect only the html elements with the id="a" */
+/*ID selector */
+#tatertot{
+  color:black;
+}
+/* selector */
+#demoBox h1{
+  color:olive;
+}
+/* The grouping selector selects all the HTML elements with the same style definitions.
+It will be better to group the selectors, to minimize the code. To group selectors, separate each selector with a comma. */ 
+/* CSS Combinators
+A combinator is something that explains the relationship between the selectors.
+A CSS selector can contain more than one simple selector.
+Between the simple selectors, we can inclde a combinator.
+There are four different combinators in CSS:
+descendant selector (space)
+child selector (>)
+adjacent selector (+)
+general sibling selector (~)*/
+.header h1{
+color:green;
+}
+.header h2{
+color:navy;
+}
+/* A psuedo-class is used to define a special state of an element. For example , it can be ised to style an elements when a user mouses over it, style visited abd unvisited links differently style an element when it gets focus.*/
+a:link{
+color:brown;
+}
+a:visited{
+  color:white;
+}
+/* The [attribute] selector is used to select elements with a specified attribte. The following example selects all <a> elements with a target attribute: */
+a[target]{
+  background-color:orange;
+}
+
+
+}
+div h1 {
+  background-color: orange;
+}
+div > h1{
+  background-color:yellow;
+}
+div p{
+  background-color:pink;
+  color:red;
+}
+#not{
+color:green;
+}
+
+  </style>	
+  	</head>
+  
+		<body>
+    <div class="header">
+		<h1> TAEHS </h1>
+		<h2> Web Dev </h2>
+		<h3> Lab 10 Internal CSS </h3>
+		<h4> Princess Lim </h4>
+    </div>
+ <div class="topnav">
+   <a href="../../index.html">HOME </a>
+    <a href="../lab1/lab1.html">Lab # 1 </a>
+    <a href="../lab2/lab2.html">Lab # 2</a>
+    <a href="../lab3/lab3.html">Lab # 3 </a>
+    <a href="../lab4/lab4.html">Lab # 4 </a>
+    <a href="../lab5/lab5.html">Lab # 5 </a>
+    <a href="../lab6/lab6.html">Lab # 6 </a>
+     <a href="../../index.html">Lab # 7  </a>
+    <a href="../lab8/lab8.html">Lab # 8  </a>
+    <a href="../lab9/lab9.html">Lab # 9</a>
+    <a href="../lb/lb.html">Lab # 10 </a>
+    <a href="../lb11/lb11.html">Lab # 11 </a>
+    <a href="../lb12/lb12.html">Lab # 12 </a>
+    <a href="../lb13/lb13.html">Lab # 13</a>
+    <a href="../lb14/lb14.html">Lab # 14</a>
+    <a href="../lb15/lb15.html">Lab # 15</a>
+    <a href="../lb16/lb16.html">Lab # 16</a>
+    <a href="../lb17/lb17.html">Lab # 17</a>
+    <a href="../lb18/lb18.html">Lab # 18</a>
+    <a href="../lb19/lb20.html">Lab # 19</a>
+    <a href="../lb20/lb20.html"> Lab # 20 </a>
+    </div>
+   
+    <div id="demoBox">
+    <h1>Princess</h1>
+    <p>apple</p>
+    </div>
+   
+    <h1 id="tatertot">Lim</h1>
+    <h1>2.9.22</h1>
+      
+      
+    
+
+  </body>
+
+
+</html>
